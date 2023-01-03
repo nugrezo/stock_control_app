@@ -1,10 +1,9 @@
 .stock_form {
   width: 90%;
   max-width: 40rem;
-  margin: 1rem;
-  margin-top: 5rem;
+  margin: 6rem auto;
   padding: 2rem;
-  background: rgb(231, 201, 201);
+  background: rgb(226, 186, 186);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
 }

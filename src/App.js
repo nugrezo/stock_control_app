@@ -1,13 +1,29 @@
+import { useState } from "react";
 import "./App.css";
-import StockForm from "./components/StokForm";
+import StockList from "./components/StockList";
+import StockForm from "./components/StockForm";
+
+const stockList = [
+  {
+    id: "s1",
+    name: "Slipper",
+    amount: 20,
+    unitPrice: "30",
+    description: "For ladies",
+  },
+];
 
 function App() {
-  const userInputHandler = (props) => {
-    return console.log("user input is coming");
+  const [enteredValue, setEnteredValue] = useState(stockList);
+  const userInputHandler = (inputData) => {
+    setEnteredValue((prevState) => {
+      return [inputData, ...prevState];
+    });
   };
   return (
     <div className="App">
       <StockForm onUserInput={userInputHandler} />
+      <StockList items={enteredValue} />
     </div>
   );
 }

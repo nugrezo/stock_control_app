@@ -41,7 +41,7 @@ const StockForm = (props) => {
     }
     if (enteredAmount < 1 || enteredUnitPrice < 1) {
       setError({
-        title: "Invalid number",
+        title: "Invalid amount or unit price ",
         message: "eneter greater than 0",
       });
       return;
@@ -82,7 +82,12 @@ const StockForm = (props) => {
         </div>
         <div className={classes.control}>
           <label htmlFor="stock-description">Description</label>
-          <input type="text" ref={description} />
+          <input list="dropdown" type="text" ref={description} />
+          <datalist id="dropdown">
+            <option value="For Women"></option>
+            <option value="For Men"></option>
+            <option value="Unisex"></option>
+          </datalist>
         </div>
         <div className={classes.actions}>
           <button className={classes.button} type="submit">

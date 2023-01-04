@@ -3,7 +3,7 @@
   max-width: 40rem;
   margin: 6rem auto;
   padding: 3rem;
-  background: rgb(226, 186, 186);
+  background: #365ae7;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
 }
@@ -11,7 +11,7 @@
 .head {
   margin-bottom: 3rem;
   align-items: center;
-  color: #464646;
+  color: #fff;
   font-weight: bold;
 }
 .control {
@@ -29,7 +29,7 @@
 .control label {
   font-weight: bold;
   flex: 1;
-  color: #464646;
+  color: #ffff;
   margin-bottom: 0.5rem;
   display: flex;
 }
@@ -67,7 +67,7 @@
 .button {
   font: inherit;
   border: 1px solid #4f005f;
-  background: #4f005f;
+  background: #00135f;
   color: white;
   padding: 0.75rem 3.5rem;
   cursor: pointer;

@@ -12,14 +12,15 @@ const StockList = (props) => {
         <li>Desription</li>
       </div>
       <ul className={classes.stockList}>
-        {props.items.map((item, i) => (
+        {props.items.map((item) => (
           <StockListItems
-            key={i}
+            key={item.id}
             id={item.id}
             name={item.name}
             amount={item.amount}
             unitPrice={item.unitPrice}
             description={item.description}
+            onDelete={props.onDeleteItem}
           />
         ))}
       </ul>

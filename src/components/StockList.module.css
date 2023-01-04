@@ -4,7 +4,7 @@
   max-width: 40rem;
   margin: 2rem auto;
   padding: 3rem;
-  background: rgb(226, 186, 186);
+  background: #00135f;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
 }
@@ -22,7 +22,7 @@
   margin: 0.2rem;
   font-family: sans-serif;
   font-size: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ffff;
   font-weight: bold;
-  color: #464646;
+  color: #ffff;
 }

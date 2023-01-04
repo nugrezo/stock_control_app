@@ -20,10 +20,19 @@ function App() {
       return [inputData, ...prevState];
     });
   };
+
+  const deleteItemHandler = (stockId) => {
+    console.log("delete button is working");
+    setEnteredValue((prevStock) => {
+      const updatedStock = prevStock.filter((stock) => stock.id !== stockId);
+      return updatedStock;
+    });
+  };
+
   return (
     <div className="App">
       <StockForm onUserInput={userInputHandler} />
-      <StockList items={enteredValue} />
+      <StockList items={enteredValue} onDeleteItem={deleteItemHandler} />
     </div>
   );
 }
